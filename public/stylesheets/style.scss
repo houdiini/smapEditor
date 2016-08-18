@@ -1,0 +1,27 @@
+$sprites: url(../images/kenney_medievalrtspack/Spritesheet/medievalRTS_spritesheet.png);
+$grace: -128px -448px;
+$wood: -256px -256px;
+$pine-wood: -64px -320px;
+$clay: -320px 0;
+$water: -192px -256px;
+$water2: -320px -256px;
+$sand: 0px -448px;
+$gravel: -256px -0px;
+$build1:  -320px -446px;
+
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+@import "./sass/map";
+@import "./sass/tools";
+@import "./sass/textures";
+
+.screen {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}

@@ -1,0 +1,25 @@
+<div class="screen">
+  <ul class="tools">
+    <li class="tools-item" ng-click="toggleTab(1)" ng-class="{active: tools.activeTab === 1}">Текстуры
+      <ul class="sub-tools">
+        <li class="tool" ng-repeat="biom in bioms"
+            ng-class="getTexturesClass(biom)"
+            ng-click="pickTool($index);
+            $event.stopPropagation();">
+          {{biomsName[$index]}}
+        </li>
+        <li class="tool cancel" ng-click="activeTool = undefined">Отмена</li>
+      </ul>
+    </li>
+    <li class="tools-item" ng-click="toggleTab(2)">Строения</li>
+  </ul>
+  <div class="map">
+    <div class="row" ng-repeat="row in fields track by $index">
+      <div class="cell" ng-repeat="cell in row track by $index"
+        ng-class="getTexturesClass(cell)"
+        ng-click="cell = tools.activeTool+1"
+
+      </div>
+    </div>
+  </div>
+</div>

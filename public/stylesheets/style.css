@@ -1,0 +1,100 @@
+body, html {
+  margin: 0;
+  padding: 0; }
+
+.map {
+  width: 640px;
+  height: 640px;
+  background: #d9f0f0;
+  display: flex;
+  flex-flow: column wrap; }
+  .map .row {
+    width: 640px;
+    height: 64px;
+    background: #000;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row nowrap; }
+
+.cell {
+  width: 64px;
+  height: 64px;
+  border-right: 1px dashed rgba(221, 221, 221, 0.5);
+  border-bottom: 1px dashed rgba(221, 221, 221, 0.5);
+  box-sizing: border-box;
+  background: url(../images/kenney_medievalrtspack/Spritesheet/medievalRTS_spritesheet.png) -128px -448px;
+  transition: opacity .2s; }
+  .cell:hover {
+    opacity: .89; }
+  .cell.wood {
+    background: url(../images/kenney_medievalrtspack/Spritesheet/medievalRTS_spritesheet.png) -256px -256px; }
+  .cell.water {
+    background: url(../images/kenney_medievalrtspack/Spritesheet/medievalRTS_spritesheet.png) -192px -256px; }
+  .cell.sand {
+    background: url(../images/kenney_medievalrtspack/Spritesheet/medievalRTS_spritesheet.png) 0px -448px; }
+  .cell.build1 {
+    background: url(../images/kenney_medievalrtspack/Spritesheet/medievalRTS_spritesheet.png) -320px -446px; }
+
+.tools {
+  display: flex;
+  flex: 1;
+  flex-flow: column nowrap;
+  list-style: none;
+  padding: 0 10px 0;
+  margin: 0;
+  background: #c3d6f4; }
+  .tools .tools-item {
+    width: 100%;
+    text-align: center;
+    cursor: default;
+    margin: 0;
+    padding: 10px 5px;
+    transition: all .2s; }
+    .tools .tools-item .sub-tools {
+      display: none;
+      margin: auto;
+      padding: 0; }
+  .tools .tools-item.active {
+    background: #537399; }
+    .tools .tools-item.active .sub-tools {
+      display: flex;
+      flex-flow: row wrap;
+      list-style: none; }
+      .tools .tools-item.active .sub-tools .tool {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 64px;
+        height: 64px;
+        transition: all .2s;
+        background: url(../images/kenney_medievalrtspack/Spritesheet/medievalRTS_spritesheet.png);
+        color: #fff;
+        text-shadow: 0 0 15px #000; }
+
+.grace {
+  background-position: -128px -448px !important; }
+
+.wood {
+  background-position: -256px -256px !important; }
+
+.water {
+  background-position: -192px -256px !important; }
+
+.sand {
+  background-position: 0px -448px !important; }
+
+.pine-wood {
+  background-position: -64px -320px !important; }
+
+.clay {
+  background-position: -320px 0 !important; }
+
+.gravel {
+  background-position: -256px 0px !important; }
+
+.screen {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap; }
+
+/*# sourceMappingURL=style.css.map */
