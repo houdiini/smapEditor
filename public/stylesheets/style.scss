@@ -1,13 +1,32 @@
-$sprites: url(../images/kenney_medievalrtspack/Spritesheet/medievalRTS_spritesheet.png);
-$grace: -128px -448px;
-$wood: -256px -256px;
-$pine-wood: -64px -320px;
-$clay: -320px 0;
-$water: -192px -256px;
-$water2: -320px -256px;
-$sand: 0px -448px;
-$gravel: -256px -0px;
-$build1:  -320px -446px;
+$sprites: url("../images/svg_sprites.svg");
+$grace: 0 0;
+$sand: -128px 0;
+$clay: 0 -64px;
+$water: 0 -128px;
+$water2: -64px -128px;
+$gravel: -128px -64px;
+$wood: -192px -192px;
+$pine-wood: -192px -256px;
+$snow: -128px -128px;
+$tree: 0 -192px;
+$trees: -64px -192px;
+$fewTree: -128px -192px;
+$pine: 0 -256px;
+$pines: -64px -256px;
+$fewPines: -128px -256px;
+$stump: 0 -320px;
+$stumps: -64px -320px;
+$fewStumps: -128px -320px;
+$stumpsWood: -192px -320px;
+
+$shed: 0 -384px;
+$stock: -64px -384px;
+$house: -128px -384px;
+$hangar: -192px -384px;
+$smithy: 0 -448px;
+$carpenter: -64px -448px;
+$tent: -128px -446px;
+$shop: -192px -447px;
 
 
 

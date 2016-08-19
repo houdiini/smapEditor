@@ -3,21 +3,36 @@
     <li class="tools-item" ng-click="toggleTab(1)" ng-class="{active: tools.activeTab === 1}">Текстуры
       <ul class="sub-tools">
         <li class="tool" ng-repeat="biom in bioms"
-            ng-class="getTexturesClass(biom)"
-            ng-click="pickTool($index);
+            ng-class="getTexturesClass({texture: biom})"
+            ng-click="pickTexture($index);
             $event.stopPropagation();">
           {{biomsName[$index]}}
         </li>
         <li class="tool cancel" ng-click="activeTool = undefined">Отмена</li>
       </ul>
     </li>
-    <li class="tools-item" ng-click="toggleTab(2)">Строения</li>
+    <li class="tools-item" ng-click="toggleTab(2)" ng-class="{active: tools.activeTab === 2}">
+      Строения
+      <ul class="sub-tools">
+        <li class="tool" ng-repeat="build in buildings"
+            ng-class="getBuildingClass(build)"
+            ng-click="pickBuilding($index);
+            $event.stopPropagation();">
+        </li>
+        <li class="tool cancel" ng-click="activeTool = undefined">Отмена</li>
+      </ul>
+    </li>
+    <li> {{fields}} </li >
   </ul>
-  <div class="map">
+  <div class="map" ng-class="{trace: tools.activeBuilding !== undefined}">
     <div class="row" ng-repeat="row in fields track by $index">
       <div class="cell" ng-repeat="cell in row track by $index"
         ng-class="getTexturesClass(cell)"
-        ng-click="cell = tools.activeTool+1"
+        ng-click="setCell(cell)" >
+        <div class="build"
+          ng-if="cell.building"
+          ng-class="getObjectClass(cell)"
+        >{{cell.building}}</div>
 
       </div>
     </div>

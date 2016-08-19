@@ -16,29 +16,25 @@
     display: flex;
     flex-flow: row nowrap;
   }
+
+  &.trace {
+    .cell {
+      opacity: 1;
+      box-shadow: inset 64px 0 0 0 rgba(255, 0, 0, 0.3);
+    }
+    .free { opacity: 1; box-shadow: none; }
+  }
 }
 
-.cell {
+.cell, .build {
   width: 64px;
   height: 64px;
   border-right: 1px dashed rgba(221, 221, 221, 0.5);
   border-bottom: 1px dashed rgba(221, 221, 221, 0.5);
   box-sizing: border-box;
-  background: url(../images/kenney_medievalrtspack/Spritesheet/medievalRTS_spritesheet.png) -128px -448px;
   transition: opacity .2s;
+  background: $sprites;
   &:hover {
     opacity: .89;
-  }
-  &.wood {
-    background: url(../images/kenney_medievalrtspack/Spritesheet/medievalRTS_spritesheet.png) -256px -256px;
-  }
-  &.water {
-    background: url(../images/kenney_medievalrtspack/Spritesheet/medievalRTS_spritesheet.png) -192px -256px;
-  }
-  &.sand {
-    background: url(../images/kenney_medievalrtspack/Spritesheet/medievalRTS_spritesheet.png) 0px -448px;
-  }
-  &.build1 {
-    background: url(../images/kenney_medievalrtspack/Spritesheet/medievalRTS_spritesheet.png) -320px -446px;
   }
 }

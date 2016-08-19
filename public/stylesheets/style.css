@@ -15,25 +15,23 @@ body, html {
     box-sizing: border-box;
     display: flex;
     flex-flow: row nowrap; }
+  .map.trace .cell {
+    opacity: 1;
+    box-shadow: inset 64px 0 0 0 rgba(255, 0, 0, 0.3); }
+  .map.trace .free {
+    opacity: 1;
+    box-shadow: none; }
 
-.cell {
+.cell, .build {
   width: 64px;
   height: 64px;
   border-right: 1px dashed rgba(221, 221, 221, 0.5);
   border-bottom: 1px dashed rgba(221, 221, 221, 0.5);
   box-sizing: border-box;
-  background: url(../images/kenney_medievalrtspack/Spritesheet/medievalRTS_spritesheet.png) -128px -448px;
-  transition: opacity .2s; }
-  .cell:hover {
+  transition: opacity .2s;
+  background: url("../images/svg_sprites.svg"); }
+  .cell:hover, .build:hover {
     opacity: .89; }
-  .cell.wood {
-    background: url(../images/kenney_medievalrtspack/Spritesheet/medievalRTS_spritesheet.png) -256px -256px; }
-  .cell.water {
-    background: url(../images/kenney_medievalrtspack/Spritesheet/medievalRTS_spritesheet.png) -192px -256px; }
-  .cell.sand {
-    background: url(../images/kenney_medievalrtspack/Spritesheet/medievalRTS_spritesheet.png) 0px -448px; }
-  .cell.build1 {
-    background: url(../images/kenney_medievalrtspack/Spritesheet/medievalRTS_spritesheet.png) -320px -446px; }
 
 .tools {
   display: flex;
@@ -67,30 +65,87 @@ body, html {
         width: 64px;
         height: 64px;
         transition: all .2s;
-        background: url(../images/kenney_medievalrtspack/Spritesheet/medievalRTS_spritesheet.png);
+        background: url("../images/svg_sprites.svg");
         color: #fff;
         text-shadow: 0 0 15px #000; }
 
 .grace {
-  background-position: -128px -448px !important; }
+  background-position: 0 0 !important; }
 
 .wood {
-  background-position: -256px -256px !important; }
+  background-position: -192px -192px !important; }
 
 .water {
-  background-position: -192px -256px !important; }
+  background-position: 0 -128px !important; }
 
 .sand {
-  background-position: 0px -448px !important; }
+  background-position: -128px 0 !important; }
 
 .pine-wood {
-  background-position: -64px -320px !important; }
+  background-position: -192px -256px !important; }
 
 .clay {
-  background-position: -320px 0 !important; }
+  background-position: 0 -64px !important; }
 
 .gravel {
-  background-position: -256px 0px !important; }
+  background-position: -128px -64px !important; }
+
+.snow {
+  background-position: -128px -128px !important; }
+
+.tree {
+  background-position: 0 -192px !important; }
+
+.trees {
+  background-position: -64px -192px !important; }
+
+.fewTree {
+  background-position: -128px -192px !important; }
+
+.pine {
+  background-position: 0 -256px !important; }
+
+.pines {
+  background-position: -64px -256px !important; }
+
+.fewPines {
+  background-position: -128px -256px !important; }
+
+.stump {
+  background-position: 0 -320px !important; }
+
+.stumps {
+  background-position: -64px -320px !important; }
+
+.fewStumps {
+  background-position: -128px -320px !important; }
+
+.stumpsWood {
+  background-position: -192px -320px !important; }
+
+.shed {
+  background-position: 0 -384px !important; }
+
+.stock {
+  background-position: -64px -384px !important; }
+
+.house {
+  background-position: -128px -384px !important; }
+
+.hangar {
+  background-position: -192px -384px !important; }
+
+.smithy {
+  background-position: 0 -448px !important; }
+
+.carpenter {
+  background-position: -64px -448px !important; }
+
+.tent {
+  background-position: -128px -446px !important; }
+
+.shop {
+  background-position: -192px -447px !important; }
 
 .screen {
   width: 100%;
