@@ -18,6 +18,7 @@ function gameCtrlFunc($scope, Classes, $http, $interval) {
 
   $http.get('/app/buildings.json')
   .then(function(response) {
+    console.log(response);
     $scope.buildings = response.data;
     console.log($scope.building);
   })
