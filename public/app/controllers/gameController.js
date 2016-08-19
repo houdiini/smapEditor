@@ -18,10 +18,14 @@ function gameCtrlFunc($scope, Classes, $http, $interval) {
 
   $http.get('/app/buildings.json')
   .then(function(response) {
-    console.log(response);
     $scope.buildings = response.data;
-    console.log($scope.building);
   })
+
+  $http.get('/app/map.json')
+  .then(function(response) {
+    $scope.fields = response.data;
+  })
+
 
   $scope.hideAllMenu = function() {
     $scope.gameInfo.activeCell = undefined;
