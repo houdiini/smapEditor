@@ -1,0 +1,41 @@
+<div class="screen" ng-click="hideAllMenu()">
+  <div class="header">
+    <span class="info">Золото: {{gameInfo.money}}</span>
+    <span class="info">Дерево: {{gameInfo.wooden}}</span>
+  </div>
+  <div class="map" ng-class="{trace: tools.activeBuilding !== undefined}">
+    <div class="row" ng-repeat="row in fields track by $index">
+      <div class="cell" ng-repeat="cell in row track by $index"
+        ng-class="getTexturesClass(cell)"
+        ng-right-click="doAction(cell, $event); $event.stopPropagation()">
+        <div class="build" ng-if="cell.building" ng-class="getObjectClass(cell)"></div>
+
+      </div>
+    </div>
+  </div>
+  <ul class="menu" ng-if="gameInfo.isBuildMenu" ng-style="{top: gameInfo.activeCell.top, left: gameInfo.activeCell.left + 64}">
+    <li ng-click="toggleBuildWindow(); $event.stopPropagation()">Строить</li>
+    <li ng-click="gameInfo.isBuildMenu = undefined">Отмена</li>
+  </ul>
+
+  <ul class="menu" ng-if="gameInfo.isUpgradeMenu" ng-style="{top: gameInfo.activeCell.top, left: gameInfo.activeCell.left + 64}">
+    <li ng-click="toggleUpgradeWindow(); $event.stopPropagation()">Улучшить</li>
+    <li ng-click="gameInfo.isUpgradeMenu = undefined">Отмена</li>
+  </ul>
+
+  <div class="buildWindow" ng-if="gameInfo.buildWindow">
+    <ul class="list">
+      <li class="item-list" ng-repeat="build in buildings" ng-class="{disable: build.price > gameInfo.money}"
+        ng-click="buildThis(build)">
+        <div class="cover" ng-class="getObjectClass({building: build.id})"></div>
+        <div class="content">
+          <h3 class="title">{{build.title}}</h3>
+          <p class="description">{{build.description}}</p>
+          <div class="footer">
+            <span class="price">Цена: {{build.price}}</span>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

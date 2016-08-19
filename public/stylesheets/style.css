@@ -147,9 +147,76 @@ body, html {
 .shop {
   background-position: -192px -447px !important; }
 
+.menu {
+  position: absolute;
+  border-radius: 5px;
+  border: 1px solid #6b6b6b;
+  background: rgba(255, 255, 255, 0.7);
+  list-style: none;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+  .menu li {
+    padding: 5px 10px; }
+    .menu li:hover {
+      background: #629cff;
+      color: #fff; }
+
+.buildWindow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 70%;
+  height: 70%;
+  min-width: 800px;
+  min-height: 500px;
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.68);
+  border-radius: 5px;
+  overflow-y: scroll; }
+  .buildWindow .list {
+    list-style: none;
+    padding: 20px;
+    margin: 0; }
+    .buildWindow .list .item-list {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      cursor: default; }
+      .buildWindow .list .item-list.disable {
+        filter: grayscale(1);
+        -webkit-filter: grayscale(1);
+        -moz-filter: grayscale(1); }
+      .buildWindow .list .item-list .cover {
+        min-width: 64px;
+        height: 64px;
+        margin: 10px;
+        background: url("../images/svg_sprites.svg"); }
+      .buildWindow .list .item-list .content {
+        padding: 10px 0; }
+        .buildWindow .list .item-list .content .title {
+          margin: 0; }
+      .buildWindow .list .item-list:hover {
+        background: #9eceff; }
+
 .screen {
   width: 100%;
   display: flex;
-  flex-flow: row nowrap; }
+  flex-flow: row wrap; }
+  .screen .header {
+    width: 100%;
+    height: 30px;
+    background: #dbe2ed;
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap; }
+    .screen .header .info {
+      padding: 0 10px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,45 @@
+.buildWindow {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  margin: auto;
+  width: 70%;
+  height: 70%;
+  min-width: 800px;
+  min-height: 500px;
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.68);
+  border-radius: 5px;
+  overflow-y: scroll;
+  .list {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    .item-list {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      cursor: default;
+      &.disable{
+        filter: grayscale(1);
+        -webkit-filter: grayscale(1);
+        -moz-filter: grayscale(1);
+      }
+      .cover {
+        min-width: 64px;
+        height: 64px;
+        margin: 10px;
+        background: $sprites;
+      }
+      .content {
+        padding: 10px 0;
+        .title {
+          margin: 0;
+        }
+      }
+      &:hover {
+        background: #9eceff;
+      }
+    }
+  }
+}

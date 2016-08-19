@@ -14,15 +14,17 @@
     <li class="tools-item" ng-click="toggleTab(2)" ng-class="{active: tools.activeTab === 2}">
       Строения
       <ul class="sub-tools">
+
         <li class="tool" ng-repeat="build in buildings"
-            ng-class="getBuildingClass(build)"
+            ng-class="getObjectClass({building: build})"
             ng-click="pickBuilding($index);
             $event.stopPropagation();">
         </li>
         <li class="tool cancel" ng-click="activeTool = undefined">Отмена</li>
       </ul>
     </li>
-    <li> {{fields}} </li >
+    <li class="tools-item" ng-click="saveFields()"> Сохранить </li >
+    <li class="tools-item" ng-click="openFields()"> Сохранить </li >
   </ul>
   <div class="map" ng-class="{trace: tools.activeBuilding !== undefined}">
     <div class="row" ng-repeat="row in fields track by $index">

@@ -1,0 +1,23 @@
+.menu {
+  position: absolute;
+
+  border-radius: 5px;
+  border: 1px solid rgb(107, 107, 107);
+  background: rgba(255, 255, 255, 0.7);
+  list-style: none;
+
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  li {
+    padding: 5px 10px;
+    &:hover {
+      background: #629cff;
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "dummi-data": [
+    {
+      "id": 0,
+      "description": "Accusantium Iusto Consectetur Recusandae Cumque Inventore Enim Delectus Nostrum Temporibus Placeat Animi Aliquid Quibusdam Suscipit Soluta Molestiae Natus In Earum Ex Quas Sint Corrupti Quisquam Minima Consequuntur Laboriosam Nam At Ipsum Magni Odit Tenetur Voluptatibus Reprehenderit.",
+      "title": "In",
+      "price": "$10.99"
+    },
+    {
+      "id": 1,
+      "description": "Quas Repellat Est Esse Quaerat Eos Deleniti Maxime Hic Distinctio Error Debitis Sapiente Sequi Veritatis Quisquam Voluptates Voluptatibus Adipisci Ex Numquam Ipsa Doloremque Voluptate.",
+      "title": "Quisquam Autem Iure Commodi",
+      "price": "$8.99"
+    },
+    {
+      "id": 2,
+      "description": "Quas Quibusdam Itaque Iusto Libero Assumenda Excepturi Praesentium Reprehenderit Molestias Omnis Doloremque Numquam Mollitia Aut Harum Amet Vitae Facere Deserunt Saepe Commodi Voluptate Eius Ab Ipsa Voluptatem Animi Id Rerum Repellat Nulla Doloribus Fugit In Cupiditate Culpa.",
+      "title": "Saepe Error Tempora Libero Tenetur",
+      "price": "$14.99"
+    },
+    {
+      "id": 3,
+      "description": "Numquam Illo Sequi Dolore Rem Amet Ab Dolorum Quibusdam Rerum Iusto Eum Facere Ea In Natus Quos Consectetur Voluptates Sapiente Earum Autem Asperiores Repellendus Nam Accusamus Animi Aut.",
+      "title": "Aut Mollitia Vel Quidem",
+      "price": "$8.99"
+    },
+    {
+      "id": 4,
+      "description": "Non Nulla Necessitatibus Odio Sint Quaerat Explicabo Temporibus Eligendi Neque In Illo Ratione Provident Sunt Facere Quos Maxime Aut Architecto Dolor Nostrum Atque Deserunt Ad Sit Nobis Magni Aperiam Dignissimos Quia Dolorum Corrupti.",
+      "title": "Veniam Debitis Dolorum",
+      "price": "$3.99"
+    },
+    {
+      "id": 5,
+      "description": "Ipsa Sint Dolorum Voluptas Earum Alias Natus Autem Assumenda Dolores Atque Saepe Tempore Omnis Voluptate Numquam Aspernatur Consequatur Eaque Quibusdam Nulla Reprehenderit Deserunt Odio Est Beatae Temporibus Reiciendis Voluptatum Ea Laborum Nostrum Quis Cupiditate.",
+      "title": "Ad Suscipit Quasi Quis",
+      "price": "$8.99"
+    },
+    {
+      "id": 6,
+      "description": "Nulla Doloribus Molestias Eligendi Libero Ipsam Architecto Et Laborum Veritatis Natus Culpa Perspiciatis Ipsa Unde Soluta Mollitia Laboriosam Saepe Voluptate.",
+      "title": "Voluptatem Quos Quo",
+      "price": "$15.99"
+    },
+    {
+      "id": 7,
+      "description": "Quasi Quos Quas Laborum Dolor Eius Fugiat Esse Ab Cumque Praesentium Est Fuga Libero Sequi Neque Placeat Voluptate Reprehenderit Officia.",
+      "title": "Sed Optio",
+      "price": "$16.99"
+    }
+  ]
+}
